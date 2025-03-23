@@ -87,7 +87,7 @@ function drawWave(n: number) {
     ctx!.strokeStyle = props.colors[i % props.colors!.length];
     for (let x = 0; x < w; x += 5) {
       const y = noise(x / 800, 0.3 * i, nt) * 100;
-      ctx!.lineTo(x, y + h * 0.6); // Adjust for height, at 50% of the container
+      ctx!.lineTo(x, y + h * 0.565); // Adjust for height, at 50% of the container
     }
     ctx!.stroke();
     ctx!.closePath();

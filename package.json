@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxi cleanup & nuxi dev --host --inspect",
+    "check": "npm run lint && npm audit && npm run build",
     "lint": "eslint .",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
