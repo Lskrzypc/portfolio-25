@@ -3,8 +3,11 @@ import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
 
-function openExternalLink(url: string) {
-  window.open(url, '_blank');
+async function openExternalLink(externalLink: string) {
+  await navigateTo(externalLink, {
+    external: true,
+    open: { target: '_blank' },
+  });
 }
 </script>
 
