@@ -49,7 +49,7 @@ function openExternalLink(url: string) {
             <IconGithub class="h-8 mb-2 antialiased text-gray-300" />
           </button>
 
-          <div class="h-20 w-1 bg-accent rounded-full"></div>
+          <button class="h-20 w-1 bg-accent rounded-full"></button>
         </div>
       </div>
     </div>
