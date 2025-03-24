@@ -8,10 +8,10 @@
         >{{ t('headerSection.name') }}</span
       >
       <div class="flex gap-x-4 ml-auto">
-        <button value="Traduire la page" @click="switchCurrentLocale">
+        <button aria-label="Traduire la page" @click="switchCurrentLocale">
           <IconTranslate class="h-6 w-6 text-gray-200" />
         </button>
-        <button value="Ouvrir le menu de navigation">
+        <button aria-label="Ouvrir le menu de navigation">
           <IconHamburger class="h-6 w-6 text-gray-300" />
         </button>
       </div>

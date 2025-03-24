@@ -13,7 +13,12 @@ export const useTranslation = () => {
     window.location.reload();
   };
 
+  const getCurrentLocale = () => {
+    return localStorage.getItem('locale');
+  };
+
   return {
     switchCurrentLocale,
+    getCurrentLocale,
   };
 };

@@ -37,19 +37,19 @@ function openExternalLink(url: string) {
       <div class="flex w-full flex-1 items-end px-4 md:px-8 lg:px-12">
         <div class="flex flex-col items-center">
           <button
-            value="Visiter mon profil LinkedIn"
+            aria-label="Visiter mon profil LinkedIn"
             @click="openExternalLink('https://fr.linkedin.com/in/lskrzypc')"
           >
             <IconLinkedin class="w-8 h-8 my-2 antialiased text-gray-300" />
           </button>
           <button
-            value="Visiter mon profil GitHub"
+            aria-label="Visiter mon profil GitHub"
             @click="openExternalLink('https://github.com/Lskrzypc')"
           >
             <IconGithub class="h-8 mb-2 antialiased text-gray-300" />
           </button>
 
-          <button class="h-20 w-1 bg-accent rounded-full"></button>
+          <div class="h-20 w-1 bg-accent rounded-full"></div>
         </div>
       </div>
     </div>
